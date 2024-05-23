@@ -1,0 +1,77 @@
+Q1. Describe the differences between supervised, unsupervised, and semi-supervised learning. Give examples of each.
+a. Supervised Learning : when we traine our  model using label data, label data means every input have correponding output
+b. unsupervised Learning : when we traine our  model using unlabel data, unlabel data means there is no correponding output for input.
+c. semi-supervised learning : Whene we traine our model using both label and unlabel data.
+
+
+Q2. Describe the differences between underfitting and overfitting.
+a. underfitting : underfitting means when our model does not perform well on traing data as well as testing data.
+b. overfitting : underfitting means when our model does not perform well on testing data but well perform on training data.
+
+
+Q3. What are the different supervised and unsupervised algorithm?
+==> Supervished Machine Learning Algorithm.
+1. Linear regression
+2. Logistic Regression
+3. Support Vector Machine
+4. Decision Tree
+6. Random Forest
+7. KNN
+8. Xgboost 
+9. Adaboost
+10. Artificial neural Network
+==> Unsupervised Machine Learning Algorithm.
+1. kmean
+2. kmedoid
+3. fuzzy-c
+4. Hierarchical
+5. Self-Organizing Maps
+6. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+
+
+Q4. Describe the process of Model building
+1. Data Gathering
+2. Data Preprocessing
+3. Data split for traing testing
+4. Model training
+5. Model Evaluation
+
+
+Q5. What are the different Algorithm techniques in Machine Learning?
+The different types of techniques in Machine Learning are
+1. Supervised Learning
+2. Unsupervised Learning
+3. Semi-supervised Learning
+4. Reinforcement Learning
+5. Transduction
+5 Learning to Learn
+
+
+Q6. What is ‘Training set’ and ‘Test set’?
+1. Training set--traing data, the data which is use to train the model generally we take 80% data for training.
+2. Test set -- testing data, the data which is use to evaluate the performance of model.
+
+
+Q7. Explain what is the function of ‘Supervised Learning’?
+1. Classifications
+2. Speech recognition
+3. Regression
+4. Predict time series
+5. Annotate strings
+
+
+Q8. What is ensemble learning?
+To solve a particular computational program, multiple models used to train the model for increase the performance of model. This process is known as ensemble learning.
+
+
+Q9. What is diffrence between classification and regression.
+1. classification:- classification is the machine learning task in which we classify the data into different class, Here the target feature is categorical in nature.
+2. Regression :- regreesion is the machine learning task in which we predict the output, Here the target feature is nmerical in nature.
+
+
+Q10. what is bias- varience trade-off?
+1. low bias and high varience ----> overfitting
+2. high bias and low varience ----> underfitting
+3. high bias and high varience ----> bad model
+4. low bias and low bias -----> good model
+
