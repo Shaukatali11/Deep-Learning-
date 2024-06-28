@@ -1,0 +1,49 @@
+Scenario 6: Support Vector Machines (SVM)
+Question: You are training an SVM model to classify images based on pixel intensities. The training process is very slow, 
+and the model's performance is suboptimal. How might standardizing the pixel intensity features help?
+
+Analysis:
+SVMs rely on the calculation of distances between data points and the hyperplane. If the pixel intensities are not standardized,
+features with larger ranges can dominate the distance calculations, leading to a poorly defined hyperplane. Standardizing the 
+pixel intensities ensures that the SVM model can find an optimal hyperplane that maximizes the margin between classes, leading 
+to faster training and better performance.
+
+Scenario 7: Robust Scaling in the Presence of Outliers
+Question: You have a dataset with significant outliers in features like salary and age. You need to standardize the data for 
+a machine learning model. Why might you choose robust standardization over traditional standardization?
+
+Analysis:
+Traditional standardization uses the mean and standard deviation, which can be significantly affected by outliers. Robust 
+standardization, on the other hand, uses the median and interquartile range (IQR), which are less sensitive to outliers. 
+This ensures that the transformed features are not disproportionately influenced by extreme values, leading to a more robust 
+and reliable model.
+
+Scenario 8: K-Nearest Neighbors (KNN) for Regression
+Question: You are using KNN to predict house prices based on features like size, number of rooms, and location score. The 
+predictions are inconsistent. How could standardizing the features improve the prediction accuracy?
+
+Analysis:
+KNN relies on distance calculations to identify the nearest neighbors. If the features have different scales, the feature with 
+the largest range (e.g., size) will dominate the distance calculation, leading to biased predictions. Standardizing the 
+features ensures that each feature contributes equally to the distance metric, resulting in more accurate and consistent
+predictions.
+
+Scenario 9: Time Series Data in Recurrent Neural Networks (RNN)
+Question: You are using an RNN to forecast stock prices based on historical price data and trading volumes. The model's 
+performance is poor. How could standardizing the input features help improve the model?
+
+Analysis:
+RNNs are sensitive to the scale of the input features, and unstandardized features can lead to unstable gradients during 
+training. This can cause the model to struggle in learning meaningful patterns. Standardizing the input features 
+(historical prices and trading volumes) ensures that the RNN can process the data more effectively, leading to improved 
+learning and better forecasting performance.
+
+Scenario 10: Feature Engineering and Model Interpretability
+Question: You have engineered several new features from raw data for a classification model. Some features have very large 
+ranges. How could standardizing these features help in model interpretability and performance?
+
+Analysis:
+Engineered features with large ranges can dominate the model, making it difficult to interpret the importance of each feature. 
+Standardizing these features ensures that the model coefficients are on a comparable scale, making it easier to interpret 
+their relative importance. Additionally, it improves the model's performance by ensuring that all features contribute equally 
+to the learning process, leading to more balanced and accurate predictions.
