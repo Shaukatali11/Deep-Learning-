@@ -1,0 +1,52 @@
+Scenario 1: Linear Regression Model Performance
+Question: You are building a linear regression model to predict car prices based on features like mileage, engine size, and 
+age of the car. Without standardization, the model's performance is poor. Explain why standardizing the features might improve 
+the model's performance.
+
+Analysis:
+Linear regression models are sensitive to the scale of the input features. Features like mileage and engine size might have 
+different scales (e.g., mileage could be in thousands while engine size could be in liters). Without standardization, the 
+feature with the larger scale can dominate the model's coefficients, leading to a biased model that doesn't generalize well.
+Standardizing the features (to have a mean of 0 and standard deviation of 1) ensures that each feature contributes equally 
+to the prediction, improving the model's performance and interpretability.
+
+Scenario 2: Gradient Descent Convergence
+Question: You are training a neural network using gradient descent. The training is taking a long time to converge. 
+How might standardizing the input features help?
+
+Analysis:
+Gradient descent optimizes the weights of the neural network by iteratively minimizing the loss function. If the features are
+on different scales, the gradients can vary significantly, causing the optimization process to take longer to converge. 
+Standardizing the features ensures that the gradients are more uniform, leading to faster and more stable convergence. 
+This is particularly important for deep learning models where efficient training is crucial.
+
+Scenario 3: K-Means Clustering
+Question: You are using k-means clustering to segment customers based on their annual income and spending score. The clustering
+results are not meaningful. How could standardizing the features improve the clustering outcome?
+
+Analysis:
+K-means clustering relies on distance calculations to assign data points to clusters. If the features (annual income and 
+spending score) are on different scales, the feature with the larger range will dominate the distance calculation, leading 
+to biased clustering results. By standardizing the features, you ensure that both features contribute equally to the distance 
+metric, resulting in more meaningful and balanced clusters.
+
+Scenario 4: Principal Component Analysis (PCA)
+Question: You are performing PCA on a dataset with features like height, weight, and age to reduce its dimensionality. 
+The explained variance by the principal components is not satisfactory. Why should you standardize the features before 
+applying PCA?
+
+Analysis:
+PCA is sensitive to the scale of the input features as it maximizes the variance along the principal components. If the features
+have different scales, PCA will be biased towards the features with larger variances. Standardizing the features ensures that 
+PCA treats all features equally, leading to principal components that better represent the underlying structure of the data. 
+This results in a more effective dimensionality reduction and higher explained variance.
+
+Scenario 5: Logistic Regression for Classification
+Question: You are using logistic regression to classify whether emails are spam or not based on various text features. 
+The model's accuracy is low. How could standardizing the features help improve the model's performance?
+
+Analysis:
+Logistic regression, like linear regression, is sensitive to the scale of the input features. If the text features 
+(e.g., word frequencies) have different scales, the model coefficients might be biased towards the features with larger
+values. Standardizing the features ensures that each feature contributes equally to the decision boundary, improving the 
+model's accuracy and interpretability.
